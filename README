@@ -1,0 +1,13 @@
+Python module to query the Zoopla Zed-Index API
+
+Requires python3 and a recent version of OpenSSL (>= 1.0.1) or
+the requests will fail.
+
+The methods of the PlaceILiveRequest objects return the Z-Index for a
+specific UK outcode.
+
+To produce a neighborood score using this one must normalize to the surrouding neighboroods.
+
+codes_cleanup.py takes the outcodes.csv data, which is very badly formatted and cleans it up and spits out a json file which needs just a little bit of manual cleaning but it's easier to handle.
+
+the api key must be specified in the main of both the modules if you want to try them out
